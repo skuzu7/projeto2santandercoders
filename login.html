@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Agência de Turismo</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        form {
+            max-width: 300px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type=email], input[type=password] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        input[type=submit] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+        }
+
+        input[type=submit]:hover {
+            background-color: #0056b3;
+        }
+
+        .login-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Login - Viagem dos Sonhos</h1>
+    </header>
+    <main>
+        <form>
+            <label for="email">E-mail ou usuário:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" name="password" required>
+
+            <input type="submit" value="Entrar">
+            
+            <div class="login-links">
+                <a href="#">Esqueci minha senha</a> | <a href="#">Cadastre-se aqui</a>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
